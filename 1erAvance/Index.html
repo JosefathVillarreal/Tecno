@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Candal|Khula&display=swap" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/MyStyle.css">
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/Modal1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechNet</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="Index.html">Logo</a>
+  <div class="login-container">
+    <form>
+      <input type="text" id="BarraParaBuscar" placeholder="Buscar" name="username">
+      <button type="button" class="btn btn-primary" id="myBtn" onclick= "modal()">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="carrito">4</span>
+      </button>
+      <button><i class="fa fa-search"></i></button>
+      <img id="imagenavbar" src="css/images/img_snow_wide.jpg">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+</div>
+
+<div id="carrusel">
+<div class="mySlides">
+  <img src="css/images/img_woods_wide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="css/images/img_5terre_wide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="css/images/img_mountains_wide.jpg" style="width:100%">
+</div>
+  
+<div class="mySlides">
+  <img src="css/images/img_lights_wide.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="css/images/img_nature_wide.jpg" style="width:100%">
+</div>
+  
+<div class="mySlides">
+  <img src="css/images/img_snow_wide.jpg" style="width:100%">
+</div>
+
+  
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+<div>
+  <!--
+<button id="myBtn" onclick= "modal()">Open Modal</button>
+-->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Por favor, ingrese a su <a  href="RegistroV2.html">cuenta</a></p>
+  </div>
+
+</div>
+</div>
+
+<div class="row" id="lodeabajodelcarrusel">
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_woods_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_5terre_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+  </div>    
+  <div class="column">
+    <img class="demo cursor" src="css/images/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+  </div>
+</div>
+
+<div class="container-fluid">
+  
+  <div class="row">
+ 
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p id="titulo" onclick="obtenertitulo()">Articulo</p> 
+        <hr>
+        <h1>Una breve descripcion</h1> 
+        <p>Precio: $999.99</p> 
+        <small>#Electronicos</small>
+        <button type="button" class="btn btn-primary" id="AgregarACarrito"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span></button>
+        <hr>
+        <button type="button" class="btn btn-secondary" id="Like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></button>
+        <button type="button" class="btn btn-secondary" id="Dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i></span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>John Doe</h1> 
+        <p>Architect & Engineer</p> 
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1 id="titulo" onclick="obtenertitulo()">John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="css/images/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John Doe</h1> 
+          <p>Architect & Engineer</p> 
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<footer>
+  <small>Información de contacto: </small>
+  <small>Josefat A. Villarreal Salazar</small>
+  <small>josefath98@gmail.com</small>
+</footer>
+
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+  </script>
+
+</script>
+</body>
+</html>
