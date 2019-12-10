@@ -1,0 +1,62 @@
+
+                
+                <div>
+                    <select class="form-control"  id="comboparalista" name="comboparalista"  onchange="valor();">
+                        <%
+                            for(Product p : productos){
+                        %>
+                        <option value="<%= p.getNombre() %>">
+                            <%= p.getNombre()%>
+                        </option>
+                        <%
+                            }
+                        %>
+                    </select>
+                </div>
+                
+
+ 
+          <%
+        if(user!=null){
+            if(user.getPuesto().equals("Administrador")){
+                %>
+                
+                
+                
+                <%
+            }else{
+                %>
+                
+                  <%
+            }
+       
+            %>
+
+
+                 <%
+                    if(user!=null){
+                        if(user.getPuesto().equals("Administrador")){
+                 %>
+                 
+                   <%
+                    }else{
+                   %>
+                
+                    <select class="form-control" multiple id="comboparalista"  name="lista" form="usrform" onchange="valor();">
+                   <%
+                       for(Product p : productos){
+                   %>
+                   <option value="<%= p.getId() %>">
+                       <%= p.getNombre()%>
+                   </option>
+                   <%
+                       }
+                   %>
+                  </select>
+                  <br>
+                   
+                   <%
+                      }
+       
+                   %>
+                  

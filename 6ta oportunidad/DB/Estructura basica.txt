@@ -1,0 +1,23 @@
+//estructura basica
+
+   
+    <%
+        if(user!=null){
+            if(user.getPuesto().equals("Administrador")){
+            
+    %>
+    <p>Administrador</p>
+    <%
+        }else{
+    %>
+    <p>Cliente</p>
+    
+    <%
+    }
+    }else{
+    %>
+    <p>Basico</p>
+    <%
+    }
+    %>
+    

@@ -1,0 +1,26 @@
+Artículo mejor rankeado (El más valorado) YA
+Articulo más comprado (El que sale más veces en el historial de compra) YA
+Articulo más nuevo (el último agregado) YA
+Articulo más barato (el precio más barato de artículos) YA
+Artículo más reservado (el más agregado a carrito) YA
+Artículo más comentario (el que tiene más comentarios) YA
+
+ya tengo los destacados, ahora me falta que me regrese todas 
+las cosas de un producto por lo menos nombre, imagen   YA
+
+Por hacer artículso destacados básicos YA
+y agregar en el navbar un select para buscar por categorías YA
+luego hacer los filtros dinámicos
+cambiar el campo de texto a password YA
+luego reparar la imagen por java 
+luego reparar que el publicar un producto sea por el select de borrador o publicado YA
+luego reparar los botones que sobran 
+luego ver como recordar usuarios por cookies
+Reparar al modificar un producto, agregar en automático la ruta en un text
+que al cambiar de orden un producto de carrito, que no sea por un text, si no por un select 
+finalmente, reacomodar la pantalla de consulta de producto para que se vea bonita con los comentarios 
+Cambiar el diseño de los botones que se ven feos 
+Agregar en la página de consulta las unidades y si puedo, mandar presupuestar desde ahí 
+Checar por qué al presupuestar me manda un precio raro, en vez el del articulo
+Aumentar las unidades de todos los artículos por que me quedan muy pocos
+Que en el historial de compra la fecha sea con hora y minutos
