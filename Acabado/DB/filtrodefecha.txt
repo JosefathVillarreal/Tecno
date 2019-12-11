@@ -1,0 +1,7 @@
+Esto para los filtros dinamicos 
+
+SET @FechaInicio = (SELECT STR_TO_DATE('06-12-2019','%Y,%m,%d'));
+SELECT STR_TO_DATE('06,12,2019','%d,%m,%Y');
+
+<img id="imagenavbar" src="ControlerIMG?username=${user.getNickname()}">
+

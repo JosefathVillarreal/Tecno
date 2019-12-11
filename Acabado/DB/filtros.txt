@@ -1,0 +1,29 @@
+
+IF titulo = '' OR titulo = null THEN 
+SELECT null;
+ELSE 
+SET @QueryTemporal = titulo; 
+SET @QueryAEjecutar = (SELECT CONCAT ( ' AND ', @QueryBasico,  titulo));
+END IF;
+
+IF descripcion = '' OR descripcion = null THEN 
+SELECT null;
+ELSE 
+SET @QueryAEjecutar = (SELECT CONCAT (' AND ', @QueryTemporal, descripcion));
+END IF;
+
+/*
+IF fechainicio = '' OR fechainicio = null THEN 
+SELECT null;
+ELSE 
+SET @QueryAEjecutar = (SELECT CONCAT (@QueryAEjecutar, SELECT DATE(fechainicio)));
+SELECT DATE(fechainicio);    
+END IF;
+
+IF fechafin = '' OR fechafin = null THEN 
+SELECT null;
+ELSE 
+SET @QueryAEjecutar = (SELECT CONCAT (@QueryAEjecutar, SELECT DATE(fechafin)));
+SELECT DATE(fechafin);    
+END IF;
+*/
